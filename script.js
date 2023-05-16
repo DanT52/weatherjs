@@ -10,7 +10,7 @@ async function checkWeather(city){
 
     if(response.status == 404){
         document.querySelector(".error").style.display = "block";
-        document.querySelector(".weather").style.display = "none";
+        document.querySelector(".card").style.display = "none";
         return
     }
     document.querySelector(".error").style.display = "none";
@@ -47,7 +47,7 @@ async function checkWeather(city){
         weatherIcon.src = "images/clouds.png"
     }
 
-    document.querySelector(".weather").style.display = "block"
+    document.querySelector(".card").style.display = "block"
 
 }
 
@@ -61,3 +61,12 @@ searchBox.addEventListener("keyup", function(event) {
     }
   })
 
+  var btn = document.getElementById('btn')
+
+  function F() {
+      btn.style.left = '0'
+  }
+  
+  function C() {
+      btn.style.left = '110px'
+  }

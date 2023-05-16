@@ -10,19 +10,34 @@
 </head>
 <body>
 
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="enter city name"
-            spellcheck="false">
-            <button> <img src="images/search.png"></button>
+    <div class="search">
+        <input type="text" placeholder="enter city name or zip code"
+        spellcheck="false">
+        
+
+        <div class="button-box">
+            <div class="btn"></div>
+            <button type="button" class="toggle-btn" onclick="F()">°F</button>
+            <button type="button" class="toggle-btn" onclick="C()">°C</button>
         </div>
+        
+    </div>
+
+    <div class="card">
+        
         <div class="error">
             <p>Invalid City Name</p>
         </div>
+        <h2 class="city">Georgeville</h2>
         <div class="weather">
-            <img src="images/mist.png" class="weather-icon">
-            <h1 class="temp">22°F</h1>
-            <h2 class="city">Georgeville</h2>
+            <div class="middiv">
+                <h1 class="time">5:45 pm</h1>
+                
+                <div class="weatherstuff">
+                    <img src="images/mist.png" class="weather-icon">
+                    <h1 class="temp">22°F</h1>
+                </div>
+            </div>
             <div class="details">
                 <div class="col">
                     <img src="images/humidity.png" >
